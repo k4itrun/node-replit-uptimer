@@ -1,7 +1,7 @@
 {
   "author": "k4itrun",
   "name": "node-replit-uptimer",
-  "version": "2.0.0-renewed",
+  "version": "3.0.0-security",
   "description": "Don't let your replit go offline, Create a http server with just one line of code and keep pinging to keep your project online!",
   "main": "src/index.js",
   "module": "src/index.js",
@@ -28,5 +28,8 @@
   "packageManager": "pnpm@7.26.3",
   "dependencies": {
     "colors": "^1.4.0"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }

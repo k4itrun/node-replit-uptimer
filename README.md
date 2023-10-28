@@ -18,16 +18,26 @@
 ## Examples
 **no configuration**
 ```javascript
-require("node-replit-uptimer").config();
+new (require("node-replit-uptimer"))();
 ```
 
 **with configuration**
 ```javascript
-require("node-replit-uptimer").config({
- port: 3000,
- path: "/",
- message: "always online thanks to me.",
- debug: true,
+new (require("node-replit-uptimer"))({
+  port: 3000,               // Port on which the server will run
+  path: "/your-path",       // Path to which the server will respond
+  message: "Hello, World!", // Custom reply message
+  debug: true               // Enable debug mode (optional)
+});
+```
+- or
+```javascript
+const Uptimer = require("node-replit-uptimer");
+const server = new Uptimer({
+  port: 3000,               // Port on which the server will run
+  path: "/your-path",       // Path to which the server will respond
+  message: "Hello, World!", // Custom reply message
+  debug: true               // Enable debug mode (optional)
 });
 ```
 
